@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>My Image Gallery</h1>
+    <p class="subtitle">Explore My Favourite Photos</p>
+
+    <!-- Category Buttons -->
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('animals')">Animals</button>
+        <button onclick="filterImages('travel')">Travel</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+
+        <div class="image-box nature">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                 onclick="openLightbox(this)">
+        </div>
+
+        <div class="image-box animals">
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                 onclick="openLightbox(this)">
+        </div>
+
+        <div class="image-box travel">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                 onclick="openLightbox(this)">
+        </div>
+
+        <div class="image-box nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+                 onclick="openLightbox(this)">
+        </div>
+
+        <div class="image-box animals">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d"
+                 onclick="openLightbox(this)">
+        </div>
+
+        <div class="image-box travel">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+                 onclick="openLightbox(this)">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+
+        <span class="close" onclick="closeLightbox()">×</span>
+
+        <button class="prev" onclick="previousImage()">❮</button>
+
+        <img id="lightbox-image">
+
+        <button class="next" onclick="nextImage()">❯</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
